@@ -2,12 +2,12 @@
 import pyautogui
 import time
 
-times = 100
+times = 100  # сколько раз проходить
 
 time.sleep(3)
 for x in range(times):
     pyautogui.keyDown('shift')
-    for i in range(10):
+    for i in range(10):  # сколько строк выделять
         pyautogui.press('down')
     pyautogui.keyUp('shift')
     print('цикл')
